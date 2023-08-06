@@ -1,0 +1,20 @@
+.hamburger-menu {
+  position: absolute;
+  left: 10px;
+  top: 28px;
+  z-index: 4;
+
+  &__bar {
+    width: 35px;
+    height: 4px;
+    background-color: $black;
+
+    &:nth-child(2) {
+      margin: 6px 0;
+    }
+  }
+
+  @include break(1023) {
+    display: none;
+  }
+}

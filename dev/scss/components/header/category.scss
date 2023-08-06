@@ -1,0 +1,40 @@
+.category {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+
+  &__label {
+    display: none;
+    margin-right: 15px;
+    
+    @include break(1023) {
+      display: block;
+    }
+  }
+
+  &__navigation {
+    overflow-x: auto;
+    padding: 10px 0;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+
+      li {
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+
+        a {
+          color: $categoryColor;
+          background-color: $categoryBackground;
+          text-decoration: none;
+          padding: 4px 8px;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}

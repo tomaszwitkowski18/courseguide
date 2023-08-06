@@ -1,0 +1,48 @@
+.navigation {
+  display: none;
+  position: absolute;
+  height: 100%;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  
+  ul {
+    list-style-type: none;
+    padding: 80px 30px 20px 10px;
+    margin: 0;
+    
+    li {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      a {
+        color: $fontColor;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.active {
+    display: block;
+  }
+
+  @include break(1023) {
+    display: block;
+    position: static;
+    background: transparent;
+    
+    ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+
+      li {
+        &:not(:last-child) {
+          margin: 0 15px 0 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.logo {
+  @include break(1023) {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 120px;
+    background-size: cover;
+    display: block;
+  }
+
+  &__quote {
+    display: none;
+    margin-left: 10px;
+
+    @include break(1023) {
+      display: block;
+    }
+  }
+}

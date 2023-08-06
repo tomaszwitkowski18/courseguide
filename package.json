@@ -1,5 +1,5 @@
 {
-  "name": "ogrodnik",
+  "name": "courseguide",
   "version": "1.0.0",
   "description": "Wordpress theme",
   "main": "index.html",
@@ -28,11 +28,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.0",
-    "glightbox": "^3.2.0",
-    "gsap": "^3.6.0",
     "gulp-dart-sass": "^1.0.2",
-    "sticky-sidebar": "^3.3.1",
-    "swiper": "^10.0.4",
     "webpack-cli": "^5.1.4"
   }
 }

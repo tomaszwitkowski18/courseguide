@@ -1,1 +1,9 @@
+//helpers
+@import './components/helpers/mixins';
+@import './components/helpers/variables';
+
+//global
 @import './global';
+
+//header components
+@import './components/header/index';
