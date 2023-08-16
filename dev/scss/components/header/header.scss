@@ -4,14 +4,14 @@
     justify-content: center;
     align-items: center;
     padding: 20px 10px;
-    border-bottom: 1px solid $borderColor;
+    background: $blue;
 
     @include break(1023) {
       justify-content: space-between;
     }
-  }
 
-  &__bottom {
-
+    @include break(1300) {
+      padding: 20px 70px;
+    }
   }
 }

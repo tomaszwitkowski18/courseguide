@@ -5,7 +5,7 @@
   }
 
   &__image {
-    max-width: 120px;
+    max-width: 160px;
     background-size: cover;
     display: block;
   }
@@ -13,6 +13,7 @@
   &__quote {
     display: none;
     margin-left: 10px;
+    color: $white;
 
     @include break(1023) {
       display: block;

@@ -23,7 +23,9 @@
   &__sidebar {
     margin-left: auto;
     min-width: 250px;
+    width: 250px;
     display: none;
+    position: relative;
 
     @include break(1023) {
       display: block;

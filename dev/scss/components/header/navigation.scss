@@ -2,7 +2,7 @@
   display: none;
   position: absolute;
   height: 100%;
-  background-color: #fff;
+  background-color: $blue;
   left: 0;
   top: 0;
   z-index: 3;
@@ -18,9 +18,20 @@
       }
 
       a {
-        color: $fontColor;
+        color: $white;
         text-decoration: none;
+        font-weight: 600;
       }
+    }
+  }
+
+  &__button {
+    a {
+      background: $white;
+      color: $blue!important;
+      padding: 10px;
+      border-radius: 8px;
+      display: inline-block;
     }
   }
 
