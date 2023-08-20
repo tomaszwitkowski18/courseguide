@@ -1,0 +1,102 @@
+.course-single {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--desktop-space-between {
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include break(768) {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+
+  &__col {
+    &--mobile-full {
+      width: 100%;
+
+      @include break(768) {
+        width: auto;
+      }
+    }
+
+    &--desktop-flex {
+      @include break(768) {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  
+  &__photo {
+    img {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+    }
+  }
+
+  &__number {
+    font-size: 38px;
+
+    &--small {
+      font-size: 16px;
+      margin-right: -10px;
+    }
+  }
+
+  &__rating {
+    margin: 20px 0;
+  }
+
+  &__visit-button {
+    margin-bottom: 10px;
+
+    @include break(768) {
+      margin: 0 15px;
+    }
+  }
+
+  &__listed-info {
+    span {
+      display: block;
+
+      &:nth-child(2) {
+        margin: 5px 0;
+
+        @include break(768) {
+          margin: 0 20px;
+        }
+      }
+
+      @include break(768) {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    &--mobile {
+      @include break(768) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+      
+      @include break(768) {
+        display: inline-block;
+      }
+    }
+  }
+}
